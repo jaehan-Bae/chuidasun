@@ -1,0 +1,139 @@
+.container {
+  position: relative;
+  height: 90vh;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+footer {
+  /* position: fixed; */
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.login, .join {
+  margin-top: 160px;
+  display: flex;
+  overflow: hidden;
+}
+form {
+  margin: auto;
+  width: 500px;
+  height: 400px;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  font-family: 'fontawesome';
+}
+.login span {
+  display: block;
+}
+input[type='email'],
+input[type='password'],
+input[type='name'],
+input[type='phone'] {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ddd;
+  margin-top: 5px;
+}
+input[type='email']:hover,
+input[type='password']:hover,
+input[type='name']:hover,
+input[type='phone']:hover {
+  border: 1px solid #bbb;
+  box-shadow: 0 0 5px #bbb;
+}
+input[type='email']::placeholder,
+input[type='password']::placeholder,
+input[type='name']::placeholder,
+input[type='phone']::placeholder {
+  font-style: italic;
+  opacity: 1;
+  transition: .3s;
+}
+input[type='email']:focus::placeholder,
+input[type='password']:focus::placeholder,
+input[type='name']:focus::placeholder,
+input[type='phone']:focus::placeholder {
+  visibility: hidden;
+  opacity: 0;
+}
+.join input[type='email']::placeholder,
+.join input[type='password']::placeholder,
+.join input[type='name']::placeholder,
+.join input[type='phone']::placeholder {
+  float: left;
+  margin-left: 25px;
+}
+.login span:nth-of-type(2) {
+  margin-top: 10px;
+}
+.join input[type='email'],
+.join input[type='password'],
+.join input[type='name'],
+.join input[type='phone']{
+  margin-right: 10px;
+}
+
+.join input[type='email'] {
+  background: url('../image/join/email-icon.png') no-repeat center left 10px;
+  background-size: 14px;
+}
+.join input[type='password'] {
+  background: url('../image/join/password-icon.png') no-repeat center left 10px;
+  background-size: 14px;
+}
+.join input[type='name'] {
+  background: url('../image/join/name-icon.png') no-repeat center left 10px;
+  background-size: 14px;
+}
+.join input[type='phone'] {
+  background: url('../image/join/phone-icon.png') no-repeat center left 10px;
+  background-size: 14px;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+  font-size: 14px;
+  margin-bottom: 20px;
+  transition: .3s;
+  margin-top: 5px;
+}
+.right:hover {
+  text-decoration: underline;
+}
+.btn {
+  border: 1px solid #53513D;
+  background-color: #53513D;
+  color: #fff;
+  cursor: pointer;
+  width: 300px;
+  padding: 20px;
+  font-size: 24px;
+  transition: .3;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 20px;
+}
+.btn:hover {
+  background-color: #575752;
+  color: #fff;
+  border: 1px solid #53513D;
+}
+.que {
+  float: right;
+  margin-top: 10px;
+  font-size: 14px;
+}
+.que > a:hover {
+  text-decoration: underline;
+}
