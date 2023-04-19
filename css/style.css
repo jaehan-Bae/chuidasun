@@ -108,26 +108,32 @@ header nav a:last-child:after {
 
 /* ============Section: welcome============ */
 .welcome {
+  height: 90vh;
   position: relative;
 }
 .welcome-slide {
   width: 100%;
-  height: 100vh;
+  height: 90vh;
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .welcome-slide img {
-  width: inherit;
-  height: inherit;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 .welcome-slide .slick-prev:before, .slick-next:before {
   /* display: none; */
 }
+.welcome-slide {
+  position: relative;
+}
 .welcome-goto {}
 .welcome-title {
   position: absolute;
   color: #fff;
-  top: 90%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -140,27 +146,57 @@ header nav a:last-child:after {
 .welcome-title span {
   font-size: 20px;
 }
+.welcome-goto {
+  /* width: 120px;
+  height: 120px; */
+  position: absolute;
+  cursor: pointer;
+}
+.welcome-ball {
+  position: relative;
+  left: 100px;
+  bottom: 60px;
+}
+.welcome-ball img {
+  width: 120px;
+  animation: ani01 .9s linear 0s infinite alternate; margin-top: 0;
+}
+.welcome-goto p {
+  color: #fff;
+  text-align: center;
+  margin-top: 33px;
+}
+@keyframes ani01 {
+  0% {
+    margin-top: 0;
+  }
+  100% {
+    margin-top: 10px;
+  }
+}
 
 /* ============ Section: tip ============ */
 .tip {
-  /* height: 100vh; */
+  height: 180px;
 }
 .tip-inner {
+  height: inherit;
   width: 1300px;
   margin: auto;
 }
 .tip-contents {
   margin: auto;
-  margin-top: 80px;
-  width: 900px;
+  margin-top: 200px;
   height: 180px;
   background-color: #fff;
   text-align: center;
+  vertical-align: middle;
+  width: 900px;
 }
 .tip-items {
   display: table;
   width: 100%;
-  height: inherit;
+  height: 180px;
   table-layout: fixed;
   transition: .3s;
   font-weight: 500;
@@ -457,6 +493,57 @@ header nav a:last-child:after {
   margin-right: -35px;
 }
 
+/* ============ Section: course ============ */
+.course {
+  height: 100vh;
+  padding-top: 200px;
+}
+.course-inner {
+  width: 1200px;
+  margin: auto;
+}
+.course-btns {
+  background-color: #BBB8A5;
+}
+.course-btns a {
+  width: 394px;
+  height: 50px;
+  color: #fff;
+  display: inline-block;
+  text-align: center;
+  padding: 12px;
+  transition: .35s;
+}
+.course-btns a.active {
+  background-color: #fff;
+  color: #BBB8A5;
+  border-top: 3px solid #BBB8A5;
+  font-weight: bold;
+}
+.course-contents {
+}
+.tab {
+  position: relative;
+}
+.course-item {
+  background-color: #fff;
+  height: 800px;
+  width: 1200px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.tab-target {
+  opacity: 1;
+  visibility: visible;
+}
+.course-item:nth-child(1) {
+  opacity: 1;
+}
+.course-img {}
+.course-img img {}
+.course-desc {}
 /* ============ Section: footer ============ */
 footer {
   background-color: #BBB8A5;

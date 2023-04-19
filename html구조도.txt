@@ -5,9 +5,8 @@ header
     .info > a
 
 section.welcome
-  img
-  .welcome-goto
-  .welcome-title
+  .welcome-slide > img
+    .welcome-goto
 
 section.tip
   .tip-inner
@@ -18,8 +17,6 @@ section.tip
             h3
             p
             span
-
-t
 
 section.class
   .class-inner
