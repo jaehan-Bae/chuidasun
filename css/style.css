@@ -495,7 +495,7 @@ header nav a:last-child:after {
 
 /* ============ Section: course ============ */
 .course {
-  height: 200vh;
+  height: 220vh;
   padding-top: 200px;
 }
 .course-inner {
@@ -505,9 +505,9 @@ header nav a:last-child:after {
 .course-btns {
 }
 .course-btns a {
+  display: inline-block;
   background-color: #BBB8A5;
   color: #fff;
-  display: inline-block;
   width: 397.5px;
   text-align: center;
   padding: 12px;
@@ -523,21 +523,15 @@ header nav a:last-child:after {
 }
 .course-contents {
   position: relative;
-  height: 1650px;
+  height: 1800px;
   background-color: #fff;
-  z-index: -1;
-}
-.course-contents > div {
-  display: inline-block;
 }
 .tab {
-  display: inline-block;
   position: absolute;
   opacity: 0;
   visibility: hidden;
   transition: .35s;
   width: 1200px;
-  z-index: -1;
 }
 .tab.active {
   opacity: 1;
@@ -547,41 +541,62 @@ header nav a:last-child:after {
   opacity: 1;
   visibility: visible;
 }
-.tab:nth-child(1) {
-  opacity: 1;
-  visibility: visible;
+.tab:not(.active) {
+  opacity: 0;
+  visibility: hidden;
+}
+.course-paragraph {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0 22px;
 }
 .course-paragraph:nth-child(1) {
   margin-top: 50px;
 }
-.course-paragraph > a {
-  display: inline-block;
-  padding: 20px 95px;
+.course-paragraph:last-child {
+  margin-right: 0;
 }
 .course-item {
-  /* border: 1px solid #000; */
-  width: 300px;
-  margin-right: 50px;
+  flex-basis: 30%;
+  cursor: pointer;
   /* box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.128); */
+  margin-bottom: 20px;
+}
+.course-img {
+  overflow: hidden;
+  height: 360px;
 }
 .course-img img {
-  width: 300px;
+  width: 360px;
+  transition: .35s;
 }
-.course-img img {}
+.course-img img:hover {
+  scale: 1.1;
+}
+.course-desc {
+  margin-top: -10px;
+  width: 360px;
+  height: 200px;
+  border: 1px solid #ddd;
+  padding: 0px 16px;
+}
 .course-desc span {
   font-size: 20px;
   font-weight: bold;
   display: block;
-  margin-top: 15px;
-}
-.course-desc {
-  margin-top: -10px;
-  width: 300px;
-  border: 1px solid #ddd;
-  padding: 20px;
+  margin-top: 30px;
 }
 .course-desc p {
-  font-size: 14px;
+  font-size: 13px;
+  line-height: 1.7;
+}
+.tab .course-paragraph:last-child {
+  float: left;
+  margin-left: 12px;
+}
+.tab .course-paragraph:last-child .course-item {
+  margin-right: 24px;
 }
 /* ============ Section: footer ============ */
 footer {
