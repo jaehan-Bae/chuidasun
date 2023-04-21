@@ -128,17 +128,6 @@ $(function(){
 
 // event
 $(function() {
-  // const photos = document.querySelectorAll('.event-photo');
 
-  // photos.forEach(photo => {
-  //   photo.addEventListener('click',()=>{
-  //     photos.forEach(p=>{
-  //       p.classList.add('gray-out');
-  //       p.classList.remove('enlarge');
-  //     });
-  //     photo.classList.remove('gray-out');
-  //     photo.classList.add('enlarge');
-  //   });
-  // });
 
 })
