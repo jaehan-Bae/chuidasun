@@ -1,66 +1,70 @@
 header
   .header-inner
-    nav > a
-    .logo > img
-    .info > a
+    nav > (a*5)
+    .logo > a > img
+    .info > (a*3)
 
 section.welcome
-  .welcome-slide > img
-    .welcome-goto
+  .welcome-slide > (img*3)
+    a.welcome-goto
+      .welcome-ball > img
 
 section.tip
   .tip-inner
     .tip-contents
-      .tip-item
-        .tip-box
-          .tip-item * 3
-            h3
-            p
-            span
+      .tip-items
+        .tip-item * 3
+          h3
+          p
 
 section.class
   .class-inner
-  .class-contents
-    h2.common-title
-      .class-head > span * 3
-      .class-slide > (img * 8) * 3
-        .class-btn > a
+    .class-contents
+      h2.common-title
+        .class-head > (span*3)
+        .class-slide > (img*8) * 3
+          .class-btn > a
 
 section.movie
   h2.common-title > span
-    .video-content
+    .video-content > iframe
 
 section.story
   .story-inner
-    .story-conntents
+    .story-contents
       .story-left
-        .story-title > h2,p
-        .stroy-btn > a
+        .story-title > h2, p
+        .story-btn > a
       .story-right
-        .stroy-item
-          img
-          span
+        .story-slide
+          .controller * 3
+            .stroy-item * 2
+              .story-photo > img
+          p > small
+          .story-btn2
+            .prev > i.xi-angle-left
+            .next > i.xi-angle-right
 
-section.event
+section.event.utd.wow
   .event-inner
     .common-title
       .event-contents
-        .event-photo
+        .event-photo > img
 
 section.instar
   .instar-inner
     .common-title
-      .instar-slide > img
-
+      .instar-slide > (img*6)
 
 footer
   .footer-inner
-    .footer-top
-      .footer-left
-        .logo > img
-          p
-      .footer-right
-        .footer-item > h2 > p
-    .footer-bottom
-      .copyright
-      .sns
+    .footer-contents
+      .footer-top
+        .footer-left
+          .footer-logo > img
+            p
+        .footer-right
+          (.footer-item > h3 > p) * 3
+      .footer-bottom
+        .copyright
+        .sns > (a*4)
