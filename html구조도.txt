@@ -68,3 +68,45 @@ footer
       .footer-bottom
         .copyright
         .sns > (a*4)
+
+###### sub-page ######
+.container
+  header
+  section.course
+    .course-inner
+      .course-btns > (a*3)
+      .course-contents
+        #tab1 .tab.active
+          .course-paragraph
+            .course-item * 8
+              .course-img > img
+            .course-desc
+              span
+              p
+  footer
+
+.container
+  header
+    .login
+      form
+        span
+        input[type='email']
+        span
+        input[type='password']
+        p > label[for='chk'] .left
+          input[type='checkbox'] #chk
+          a.right
+        .btn
+        p.que > a
+  footer
+
+.container
+  header
+    .join
+      form
+        input[type='email']
+        input[type='password']
+        input[type='text']
+        input[type='tel']
+        .btn
+  footer

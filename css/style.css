@@ -727,8 +727,8 @@ form {
 }
 input[type='email'],
 input[type='password'],
-input[type='name'],
-input[type='phone'] {
+input[type='text'],
+input[type='tel'] {
   width: 100%;
   padding: 15px;
   border: 1px solid #ddd;
@@ -736,30 +736,30 @@ input[type='phone'] {
 }
 input[type='email']:hover,
 input[type='password']:hover,
-input[type='name']:hover,
-input[type='phone']:hover {
+input[type='text']:hover,
+input[type='tel']:hover {
   border: 1px solid #bbb;
   box-shadow: 0 0 5px #bbb;
 }
 input[type='email']::placeholder,
 input[type='password']::placeholder,
-input[type='name']::placeholder,
-input[type='phone']::placeholder {
+input[type='text']::placeholder,
+input[type='tel']::placeholder {
   font-style: italic;
   opacity: 1;
   transition: .3s;
 }
 input[type='email']:focus::placeholder,
 input[type='password']:focus::placeholder,
-input[type='name']:focus::placeholder,
-input[type='phone']:focus::placeholder {
+input[type='text']:focus::placeholder,
+input[type='tel']:focus::placeholder {
   visibility: hidden;
   opacity: 0;
 }
 .join input[type='email']::placeholder,
 .join input[type='password']::placeholder,
-.join input[type='name']::placeholder,
-.join input[type='phone']::placeholder {
+.join input[type='text']::placeholder,
+.join input[type='tel']::placeholder {
   float: left;
   margin-left: 25px;
 }
@@ -768,8 +768,8 @@ input[type='phone']:focus::placeholder {
 }
 .join input[type='email'],
 .join input[type='password'],
-.join input[type='name'],
-.join input[type='phone']{
+.join input[type='text'],
+.join input[type='tel']{
   margin-right: 10px;
 }
 
@@ -781,11 +781,11 @@ input[type='phone']:focus::placeholder {
   background: url('../image/join/password-icon.png') no-repeat center left 10px;
   background-size: 14px;
 }
-.join input[type='name'] {
+.join input[type='text'] {
   background: url('../image/join/name-icon.png') no-repeat center left 10px;
   background-size: 14px;
 }
-.join input[type='phone'] {
+.join input[type='tel'] {
   background: url('../image/join/phone-icon.png') no-repeat center left 10px;
   background-size: 14px;
 }
