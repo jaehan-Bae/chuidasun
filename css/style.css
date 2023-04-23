@@ -803,23 +803,23 @@ input[type='tel']:focus::placeholder {
   text-decoration: underline;
 }
 .btn {
-  border: 1px solid #53513D;
   background-color: #53513D;
   color: #fff;
   cursor: pointer;
   width: 300px;
   padding: 20px;
-  font-size: 24px;
-  transition: .3;
+  font-size: 18px;
+  font-weight: normal;
+  letter-spacing: 2px;
+  transition: .35;
   display: flex;
   width: 100%;
   justify-content: center;
   margin-top: 20px;
 }
 .btn:hover {
-  background-color: #575752;
+  background-color: #E0BE5C;
   color: #fff;
-  border: 1px solid #53513D;
 }
 .que {
   float: right;
@@ -829,7 +829,6 @@ input[type='tel']:focus::placeholder {
 .que > a:hover {
   text-decoration: underline;
 }
-
 
 /* goto-top */
 .btn-top {
