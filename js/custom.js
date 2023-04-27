@@ -20,6 +20,15 @@ $(function(){
     }
   });
 
+  // Header Trigger
+  $('.trigger').click(function(){
+    $(this).toggleClass('active');
+    $('header nav').toggleClass('active');
+  });
+  $('header nav a, section').click(function(){
+    $('header nav, .trigger').removeClass('active');
+  });
+
     /* Wow Scroll Reveal Animation */
     wow = new WOW({
       boxClass: 'wow',

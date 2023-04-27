@@ -1,0 +1,463 @@
+/* ####################### Header ####################### */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 90px;
+}
+.header-inner {
+  height: inherit;
+  width: inherit;
+}
+header nav {
+  /* float: left; */
+  background-color: #fff;
+  position: fixed;
+  height: 100vh;
+  width: 250px;
+  top: 0;
+  left: -270px;
+  padding-top: 70px;
+  padding-left: 15px;
+  transition: .5s;
+  box-shadow: 3px 0 3px rgba(0, 0, 0, 0.1);
+}
+header nav.active {
+  left: 0;
+}
+header nav a {
+  display: block;
+  margin-bottom: 5px;
+}
+header nav a:after {
+  content: '';
+}
+.logo img {
+  margin-left: -1100px;
+}
+.info {
+  font-size: 12px;
+  float: left;
+}
+.info a {
+  margin-right: 10px;
+}
+/* Trigger */
+.trigger {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 25px;
+  left: 20px;
+  font-size: 28px;
+  text-align: center;
+}
+.trigger:before {
+  content: '\e91c';
+  font-family: xeicon;
+}
+.trigger.active:before {
+  content: '\e9af';
+}
+
+/* ============Section: welcome============ */
+.welcome {
+  height: 90vh;
+  position: relative;
+}
+.welcome-ball {
+  position: relative;
+  left: 100px;
+  bottom: 250px;
+}
+/* ============ Section: tip ============ */
+.tip-inner {
+  width: 100%;
+  margin-top: -220px;
+}
+.tip-items {
+  display: table;
+  width: 100%;
+  height: 180px;
+  table-layout: fixed;
+  transition: .3s;
+  font-weight: 500;
+  position: relative;
+}
+/* ============ Section: tip-modal ============ */
+.modal-content {
+  position: absolute;
+  background-color: #fff;
+  width: 850px;
+  height: 850px;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  padding: 50px;
+}
+.modal-content img {
+  width: 750px;
+}
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.modal-desc {
+  font-family: Fontawesome;
+  text-align: left;
+  margin-top: 20px;
+  padding: 23px;
+}
+.modal-desc i {
+  font-style: normal;
+  margin-right: 20px;
+  font-weight: bold;
+}
+/* ============ Section: class ============ */
+.class {}
+.class-inner {
+  width: 100%;
+}
+.class-contents {
+  margin-top: 10vh;
+}
+
+/* ============ Section: movie ============ */
+.movie {
+  margin-top: 10vh;
+  text-align: center;
+  position: relative;
+  height: 100vh;
+}
+.video-content iframe {
+  width: 1000px;
+}
+
+/* ============ Section: story ============ */
+.story {
+  margin-top: 10vh;
+}
+.story-inner {
+  width: 100%;
+}
+/* ============ Section: event ============ */
+.event {
+  margin-top: 10vh;
+}
+.event-contents {
+  overflow: hidden;
+}
+.event-contents > div {
+  float: left;
+  width: 33.333333%;
+}
+.event-photo {
+}
+.event-photo img {
+  width: 100%;
+}
+
+/* ============ Section: instar ============ */
+.instar {
+  margin-top: 10vh;
+}
+.instar-inner {
+  width: 100%;
+  margin: auto;
+}
+.instar-slide {
+  width: 100%;
+  margin-top: 2vh;
+}
+
+/* ============ Section: course ============ */
+.course {
+  height: 220vh;
+  padding-top: 20vh;
+}
+.course-inner {
+  width: 100%;
+}
+.course-btns a {
+  display: inline-block;
+  background-color: #BBB8A5;
+  color: #fff;
+  width: 397.5px;
+  text-align: center;
+  padding: 12px;
+  height: 50px;
+  transition: .35s;
+  border-top: 3px solid transparent;
+}
+.course-btns a.active {
+  background-color: #fff;
+  color: #BBB8A5;
+  border-top: 3px solid #BBB8A5;
+  font-weight: bold;
+}
+.course-contents {
+  position: relative;
+  height: 1800px;
+  background-color: #fff;
+}
+.tab {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  transition: .35s;
+  width: 1200px;
+}
+.tab.active {
+  opacity: 1;
+  visibility: visible;
+}
+.tab:target {
+  opacity: 1;
+  visibility: visible;
+}
+.tab:not(.active) {
+  opacity: 0;
+  visibility: hidden;
+}
+.course-paragraph {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0 22px;
+}
+.course-paragraph:nth-child(1) {
+  margin-top: 50px;
+}
+.course-paragraph:last-child {
+  margin-right: 0;
+}
+.tab .course-paragraph:last-child {
+  float: left;
+  margin-left: 12px;
+}
+.tab .course-paragraph:last-child .course-item {
+  margin-right: 24px;
+}
+.course-item {
+  flex-basis: 30%;
+  cursor: pointer;
+  /* box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.128); */
+  margin-bottom: 40px;
+}
+.course-img {
+  overflow: hidden;
+  height: 360px;
+}
+.course-img img {
+  width: 360px;
+  transition: .35s;
+}
+.course-img img:hover {
+  scale: 1.1;
+}
+.course-desc {
+  margin-top: -10px;
+  width: 360px;
+  height: 200px;
+  border: 1px solid #ddd;
+  padding: 0px 16px;
+}
+.course-desc span {
+  font-size: 20px;
+  font-weight: bold;
+  display: block;
+  margin-top: 30px;
+}
+.course-desc p {
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+/* ============ Section: footer ============ */
+footer {
+  height: 40vh;
+  margin-top: 2vh;
+}
+.footer-inner {
+  width: 1000px;
+  margin: auto;
+}
+.footer-top > div {
+  float: none;
+  width: 100%;
+}
+.footer-top {
+  margin: 0 50px;
+}
+.footer-left {
+}
+.footer-left p {
+  width: 1000px;
+}
+.footer-right {
+  float: none;
+}
+.footer-item {
+  display: none;
+}
+
+/* ============ Section: login/join ============ */
+
+/* login / join */
+.login, .join {
+  margin-top: 160px;
+  display: flex;
+  overflow: hidden;
+}
+form {
+  margin: auto;
+  width: 500px;
+  height: 400px;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  font-family: 'fontawesome';
+}
+.login span {
+  display: block;
+}
+input[type='email'],
+input[type='password'],
+input[type='text'],
+input[type='tel'] {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ddd;
+  margin-top: 5px;
+}
+input[type='email']:hover,
+input[type='password']:hover,
+input[type='text']:hover,
+input[type='tel']:hover {
+  border: 1px solid #bbb;
+  box-shadow: 0 0 5px #bbb;
+}
+input[type='email']::placeholder,
+input[type='password']::placeholder,
+input[type='text']::placeholder,
+input[type='tel']::placeholder {
+  font-style: italic;
+  opacity: 1;
+  transition: .3s;
+}
+input[type='email']:focus::placeholder,
+input[type='password']:focus::placeholder,
+input[type='text']:focus::placeholder,
+input[type='tel']:focus::placeholder {
+  visibility: hidden;
+  opacity: 0;
+}
+.join input[type='email']::placeholder,
+.join input[type='password']::placeholder,
+.join input[type='text']::placeholder,
+.join input[type='tel']::placeholder {
+  float: left;
+  margin-left: 25px;
+}
+.login span:nth-of-type(2) {
+  margin-top: 10px;
+}
+.join input[type='email'],
+.join input[type='password'],
+.join input[type='text'],
+.join input[type='tel']{
+  margin-right: 10px;
+}
+
+.join input[type='email'] {
+  background: url('../image/join/email-icon.png') no-repeat center left 10px;
+  background-size: 14px;
+}
+.join input[type='password'] {
+  background: url('../image/join/password-icon.png') no-repeat center left 10px;
+  background-size: 14px;
+}
+.join input[type='text'] {
+  background: url('../image/join/name-icon.png') no-repeat center left 10px;
+  background-size: 14px;
+}
+.join input[type='tel'] {
+  background: url('../image/join/phone-icon.png') no-repeat center left 10px;
+  background-size: 14px;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+  font-size: 14px;
+  margin-bottom: 20px;
+  transition: .3s;
+  margin-top: 5px;
+}
+.right:hover {
+  text-decoration: underline;
+}
+.btn {
+  background-color: #53513D;
+  color: #fff;
+  cursor: pointer;
+  width: 300px;
+  padding: 20px;
+  font-size: 18px;
+  font-weight: normal;
+  letter-spacing: 2px;
+  transition: .35;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 20px;
+}
+.btn:hover {
+  background-color: #E0BE5C;
+  color: #fff;
+}
+.que {
+  float: right;
+  margin-top: 10px;
+  font-size: 14px;
+}
+.que > a:hover {
+  text-decoration: underline;
+}
+
+/* goto-top */
+.btn-top {
+  position: fixed;
+  background-color: #53513D;
+  color: #fff;
+  right: 20px;
+  bottom: 50px;
+  padding: 15px 20px;
+  font-size: 20px;
+  transition: .5s;
+}
+.btn-top.active {
+  bottom: 20px;
+}
+
+/* ▦▦▦▦▦▦▦▦▦ Scroll Reveal CSS Animation ▦▦▦▦▦▦▦▦▦ */
+.utd {
+  animation: utd .5s linear both;
+}
+@keyframes utd {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
