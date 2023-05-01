@@ -17,6 +17,11 @@ section.tip
           h3
           p
 
+section.tip-modal
+  .modal-content
+    .modal-close
+    .modal-desc > img > p
+
 section.class
   .class-inner
     .class-contents

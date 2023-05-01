@@ -127,7 +127,6 @@ $(function(){
     currentSlide.removeClass('active');
     prevSlide.addClass('active');
   });
-
 });
 
 
