@@ -732,6 +732,8 @@ input[type='tel'] {
   padding: 15px;
   border: 1px solid #ddd;
   margin-top: 5px;
+  direction: auto;
+  text-align: right;
 }
 input[type='email']:hover,
 input[type='password']:hover,
