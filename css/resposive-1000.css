@@ -1,22 +1,25 @@
 /* ####################### Header ####################### */
-header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height: 90px;
+.container {
+  margin-top: 0px;
 }
+header {
+  width: 100%;
+}
+/* header.active {
+  display: none;
+} */
 .header-inner {
-  height: inherit;
-  width: inherit;
+  width: 100%;
+  position: relative;
 }
 header nav {
-  /* float: left; */
+  float: none;
   background-color: #fff;
   position: fixed;
   height: 100vh;
   width: 250px;
   top: 0;
-  left: -270px;
+  left: -260px;
   padding-top: 70px;
   padding-left: 15px;
   transition: .5s;
@@ -33,17 +36,18 @@ header nav a:after {
   content: '';
 }
 .logo img {
-  margin-left: -1100px;
+  position: absolute;
+  top: 40%;
+  left: 70%;
+  transform: translate(-50%,-50%);
 }
 .info {
-  font-size: 12px;
-  float: left;
-}
-.info a {
-  margin-right: 10px;
+  position: absolute;
+  right: 0px;
 }
 /* Trigger */
 .trigger {
+  z-index: 3;
   width: 30px;
   height: 30px;
   position: absolute;
@@ -70,53 +74,24 @@ header nav a:after {
   left: 100px;
   bottom: 250px;
 }
-/* ============ Section: tip ============ */
-.tip-inner {
+.welcome-slide {
   width: 100%;
-  margin-top: -220px;
 }
-.tip-items {
-  display: table;
+.slick-list {
+  margin-top: -200px;
+}
+.welcome-ball {
+  position: absolute;
+  transform: translate(30%, -60%);
+}
+/* ============ Section: tip ============ */
+.tip {
+  margin-top: -40vh;
+}
+.class-slide img {
   width: 100%;
-  height: 180px;
-  table-layout: fixed;
-  transition: .3s;
-  font-weight: 500;
-  position: relative;
 }
 /* ============ Section: tip-modal ============ */
-.modal-content {
-  position: absolute;
-  background-color: #fff;
-  width: 850px;
-  height: 850px;
-  text-align: center;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  padding: 50px;
-}
-.modal-content img {
-  width: 750px;
-}
-.modal-close {
-  position: absolute;
-  top: 10px;
-  right: 20px;
-  cursor: pointer;
-  font-weight: bold;
-}
-.modal-desc {
-  font-family: Fontawesome;
-  text-align: left;
-  margin-top: 20px;
-  padding: 23px;
-}
-.modal-desc i {
-  font-style: normal;
-  margin-right: 20px;
-  font-weight: bold;
-}
 /* ============ Section: class ============ */
 .class {}
 .class-inner {
@@ -125,7 +100,9 @@ header nav a:after {
 .class-contents {
   margin-top: 10vh;
 }
-
+.class-head {
+  margin-bottom: 230px;
+}
 /* ============ Section: movie ============ */
 .movie {
   margin-top: 10vh;
@@ -139,7 +116,7 @@ header nav a:after {
 
 /* ============ Section: story ============ */
 .story {
-  margin-top: 10vh;
+  /* margin-top: 0px; */
 }
 .story-inner {
   width: 100%;
@@ -171,7 +148,7 @@ header nav a:after {
 }
 .instar-slide {
   width: 100%;
-  margin-top: 2vh;
+  margin-top: 22vh;
 }
 
 /* ============ Section: course ============ */
