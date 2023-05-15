@@ -1,4 +1,12 @@
-@media all and(min-width:768px) and (max-width:1024px) {
+@media (max-width:1500px) {
+  .welcome-ball {
+    position: relative;
+    left: 100px;
+    bottom: 100px;
+  }
+}
+
+@media (max-width:1024px) {
 
   /* ####################### Header ####################### */
   .container {
@@ -9,9 +17,6 @@
     width: 100%;
   }
 
-  /* header.active {
-  display: none;
-} */
   .header-inner {
     width: 100%;
     position: relative;
@@ -47,7 +52,7 @@
   .logo img {
     position: absolute;
     top: 40%;
-    left: 70%;
+    left: 69%;
     transform: translate(-50%, -50%);
   }
 
@@ -75,47 +80,35 @@
 
   .trigger.active:before {
     content: '\e9af';
+    /* font-family: xeicon; */
   }
 
   /* ============Section: welcome============ */
-  .welcome {
-    height: 90vh;
-    position: relative;
-  }
-
   .welcome-ball {
     position: relative;
     left: 100px;
     bottom: 250px;
   }
 
-  .welcome-slide {
-    width: 100%;
-  }
-
   .slick-list {
     margin-top: -20vh;
   }
 
-  .welcome-ball {
-    position: absolute;
-    transform: translate(30%, -60%);
-  }
-
   /* ============ Section: tip ============ */
   .tip {
-    margin-top: -40vh;
+    margin-top: -35vh;
   }
 
+  /* ============ Section: tip-modal ============ */
   .tip-contents {
     width: 100%;
   }
 
-  .class-slide img {
-    width: 100%;
+  .modal-content {
+    width: 85%;
+    height: 85%;
   }
 
-  /* ============ Section: tip-modal ============ */
   /* ============ Section: class ============ */
   .class-inner {
     width: 100%;
@@ -126,15 +119,17 @@
   }
 
   .class-head {
-    margin-bottom: 230px;
+    margin-bottom: 24vh;
+  }
+
+  .class-slide img {
+    margin-right: 1vh;
   }
 
   /* ============ Section: movie ============ */
   .movie {
-    margin-top: 10vh;
+    margin-top: 7vh;
   }
-
-  .video-content iframe {}
 
   /* ============ Section: story ============ */
   .story {
@@ -152,10 +147,6 @@
   /* ============ Section: event ============ */
   .event {
     margin-top: 10vh;
-  }
-
-  .event-contents {
-    overflow: hidden;
   }
 
   .event-contents>div {
@@ -196,124 +187,67 @@
 
   /* ============ Section: course ============ */
   .course {
-    height: 220vh;
-    padding-top: 20vh;
+    padding-top: 15vh;
+  }
+
+  .course-btns {
+    width: 100%;
+    display: flex;
   }
 
   .course-inner {
     width: 100%;
   }
 
-  .course-btns a {
-    display: inline-block;
-    background-color: #BBB8A5;
-    color: #fff;
-    width: 397.5px;
-    text-align: center;
-    padding: 12px;
-    height: 50px;
-    transition: .35s;
-    border-top: 3px solid transparent;
-  }
-
-  .course-btns a.active {
-    background-color: #fff;
-    color: #BBB8A5;
-    border-top: 3px solid #BBB8A5;
-    font-weight: bold;
-  }
-
   .course-contents {
-    position: relative;
-    height: 1800px;
-    background-color: #fff;
+    width: 100%;
   }
 
   .tab {
-    position: absolute;
-    opacity: 0;
-    visibility: hidden;
-    transition: .35s;
-    width: 1200px;
-  }
-
-  .tab.active {
-    opacity: 1;
-    visibility: visible;
-  }
-
-  .tab:target {
-    opacity: 1;
-    visibility: visible;
-  }
-
-  .tab:not(.active) {
-    opacity: 0;
-    visibility: hidden;
+    width: 100%;
   }
 
   .course-paragraph {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 0 22px;
-  }
-
-  .course-paragraph:nth-child(1) {
-    margin-top: 50px;
-  }
-
-  .course-paragraph:last-child {
-    margin-right: 0;
-  }
-
-  .tab .course-paragraph:last-child {
-    float: left;
-    margin-left: 12px;
-  }
-
-  .tab .course-paragraph:last-child .course-item {
-    margin-right: 24px;
+    padding: 0 2vw;
   }
 
   .course-item {
+    width: 30%;
     flex-basis: 30%;
-    cursor: pointer;
-    /* box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.128); */
-    margin-bottom: 40px;
+    margin-bottom: 4vh;
+    border: 1px solid #eee;
+  }
+
+  .course-paragraph:nth-child(1) {
+    margin-top: 5vh;
+  }
+
+  .tab .course-paragraph:last-child {
+    float: none;
   }
 
   .course-img {
     overflow: hidden;
-    height: 360px;
+    height: 36vh;
   }
 
   .course-img img {
-    width: 360px;
-    transition: .35s;
-  }
-
-  .course-img img:hover {
-    scale: 1.1;
+    width: 30vw;
   }
 
   .course-desc {
-    margin-top: -10px;
-    width: 360px;
-    height: 200px;
-    border: 1px solid #ddd;
-    padding: 0px 16px;
+    margin-top: -1vh;
+    width: 29vw;
+    height: 20vh;
   }
 
   .course-desc span {
-    font-size: 20px;
-    font-weight: bold;
-    display: block;
-    margin-top: 30px;
+    font-size: 2vw;
+    margin-top: 3vh;
   }
 
   .course-desc p {
-    font-size: 13px;
+    font-size: 1.1vw;
     line-height: 1.7;
   }
 
@@ -339,6 +273,7 @@
 
   .footer-right {
     float: none;
+    display: block;
   }
 
   .footer-item {
@@ -346,227 +281,234 @@
   }
 
   /* ============ Section: login/join ============ */
-
   /* login / join */
   .login,
   .join {
-    margin-top: 160px;
     display: flex;
     overflow: hidden;
   }
 
   form {
     margin: auto;
-    width: 500px;
-    height: 400px;
-    padding: 40px;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
-    box-sizing: border-box;
-    font-family: 'fontawesome';
-  }
-
-  .login span {
-    display: block;
-  }
-
-  input[type='email'],
-  input[type='password'],
-  input[type='text'],
-  input[type='tel'] {
-    width: 100%;
-    padding: 15px;
-    border: 1px solid #ddd;
-    margin-top: 5px;
-  }
-
-  input[type='email']:hover,
-  input[type='password']:hover,
-  input[type='text']:hover,
-  input[type='tel']:hover {
-    border: 1px solid #bbb;
-    box-shadow: 0 0 5px #bbb;
-  }
-
-  input[type='email']::placeholder,
-  input[type='password']::placeholder,
-  input[type='text']::placeholder,
-  input[type='tel']::placeholder {
-    font-style: italic;
-    opacity: 1;
-    transition: .3s;
-  }
-
-  input[type='email']:focus::placeholder,
-  input[type='password']:focus::placeholder,
-  input[type='text']:focus::placeholder,
-  input[type='tel']:focus::placeholder {
-    visibility: hidden;
-    opacity: 0;
-  }
-
-  .join input[type='email']::placeholder,
-  .join input[type='password']::placeholder,
-  .join input[type='text']::placeholder,
-  .join input[type='tel']::placeholder {
-    float: left;
-    margin-left: 25px;
-  }
-
-  .login span:nth-of-type(2) {
-    margin-top: 10px;
-  }
-
-  .join input[type='email'],
-  .join input[type='password'],
-  .join input[type='text'],
-  .join input[type='tel'] {
-    margin-right: 10px;
-  }
-
-  .join input[type='email'] {
-    background: url('../image/join/email-icon.png') no-repeat center left 10px;
-    background-size: 14px;
-  }
-
-  .join input[type='password'] {
-    background: url('../image/join/password-icon.png') no-repeat center left 10px;
-    background-size: 14px;
-  }
-
-  .join input[type='text'] {
-    background: url('../image/join/name-icon.png') no-repeat center left 10px;
-    background-size: 14px;
-  }
-
-  .join input[type='tel'] {
-    background: url('../image/join/phone-icon.png') no-repeat center left 10px;
-    background-size: 14px;
-  }
-
-  .left {
-    float: left;
-  }
-
-  .right {
-    float: right;
-    font-size: 14px;
-    margin-bottom: 20px;
-    transition: .3s;
-    margin-top: 5px;
-  }
-
-  .right:hover {
-    text-decoration: underline;
-  }
-
-  .btn {
-    background-color: #53513D;
-    color: #fff;
-    cursor: pointer;
-    width: 300px;
-    padding: 20px;
-    font-size: 18px;
-    font-weight: normal;
-    letter-spacing: 2px;
-    transition: .35;
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    margin-top: 20px;
-  }
-
-  .btn:hover {
-    background-color: #E0BE5C;
-    color: #fff;
-  }
-
-  .que {
-    float: right;
-    margin-top: 10px;
-    font-size: 14px;
-  }
-
-  .que>a:hover {
-    text-decoration: underline;
+    height: 40vh;
+    padding: 4vw;
   }
 }
 
-
-
-@media all and(min-width:480px) and (max-width:767px) {
-  /* section {
-  margin: auto;
-} */
+@media (max-width:800px) {
+  .logo img {
+    position: absolute;
+    top: 40%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+  }
 
   .slick-list {
     margin-top: -30vh;
   }
 
+  /* ============Section: welcome============ */
+  .welcome-ball {
+    position: relative;
+    left: 0px;
+    bottom: 360px;
+  }
+
   /* ============ Section: tip ============ */
   .tip {
-    width: -20vh;
+    margin-top: -50vw;
   }
-
-  .tip-item>h3 {
-    font-size: 2.4vw;
+  .modal-content img {
+    width: 100%;
   }
-
-  .tip-item>p {
-    font-size: 1.6vw;
+  .modal-content iframe {
+    width: 90%;
   }
 
   /* ============ Section: class ============ */
-  .class-slide img {
-    margin-right: 1vw;
+  .class-head {
+    margin-bottom: 270px;
   }
 
-  .event-contents>div {
-    display: flex;
-    height: 20vh;
+  .movie>h2 {
+    margin-top: -12vh;
   }
 
-  .event-photo {
-    /* height: 200px; */
+  /* ============ Section: movie ============ */
+.movie {
+  margin-top: 9vh;
+}
+
+  /* ============ Section: story ============ */
+
+  
+  /* ============ Section: course ============ */
+.course-contents {
+  height: 700px;
+}
+
+.course-item {
+  width: 40%;
+  flex-basis: 40%;
+}
+
+.course-img img {
+  width: 40vw;
+}
+
+.course-desc {
+  margin-top: -1vh;
+  width: 38vw;
+  height: 20vh;
+}
+
+.course-desc span {
+  font-size: 2vw;
+  margin-top: 3vh;
+}
+
+.course-desc p {
+  font-size: 1.5vw;
+  line-height: 1.7;
+}
+.course-item:nth-child(3) {
+  display: none;
+}
+
+.instar-slide {
+  padding-top: 10vh;
+}
+}
+
+@media (max-width:600px) {
+
+  /* ============Section: welcome============ */
+  .welcome-ball {
+    display: none;
   }
 
-  .event-photo img {
-    height: 200px;
+  .logo img {
+    position: absolute;
+    top: 40%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+  }
+
+  .info {
+    display: none;
+  }
+  /* ============ Section: course ============ */
+/* .course-contents {
+  height: 600px;
+}
+
+.course-item {
+  width: 40%;
+  flex-basis: 40%;
+}
+.course-img img {
+  width: 40vw;
+}
+
+.course-desc {
+  width: 38vw;
+  height: 10vh;
+}
+
+.course-desc span {
+  font-size: 2vw;
+  margin-top: -2vh;
+}
+
+.course-desc p {
+  font-size: 1.5vw;
+  line-height: 1.7;
+}
+.course-item:nth-child(3) {
+  display: none;
+} */
+}
+
+@media (max-width:480px) {
+  .logo img {
+    position: absolute;
+    top: 40%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+  }
+  .slick-list {
+    margin-top: -40vh;
+  }
+  /* ============ Section: tip ============ */
+  .tip {
+    margin-top: -110vw;
+  }
+  .tip-item > h3 {
+    font-size: 3.5vw;
+  }
+  .tip-item > p {
+    font-size: 1.5vw;
+  }
+
+  /* ============ Section: class ============ */
+  .class-head {
+    margin-bottom: 350px;
+  }
+
+  .movie>h2 {
+    margin-top: -12vh;
   }
 
   /* ============ Section: story ============ */
+  .story-contents {
+    padding: 0;
+  }
   .story-title h2 {
-    margin-top: -50px;
+    /* margin-top: -20vh; */
   }
 
   .story-left {
-    width: 50%;
+    width: 40%;
+  }
+
+  .story-title {
+    margin-left: -5vw;
+  }
+  .story-title > h2 {
+    font-size: 4.3vw;
+  }
+  .story-title > p {
+    font-size: 2.5vw;
+  }
+  .story-btn > a {
+    padding: 3vw 4vw;
+  }
+  .story-photo > img {
+    width: 30vw;
+  }
+  .story-item {
+    margin-top: 4vh;
+  }
+  .story-item > p {
+    font-size: 2.5vw;
+  }
+  .prev,.next {
+    display: none;
+  }
+
+  .story-left {
+    width: 40%;
+    margin-left: 60px;
+  }
+
+  .story-right {
+    width: 40%;
   }
 
   .story-btn {
-    margin-top: -40px;
+    margin-top: 4vh;
   }
 
-  .story-btn a {
-    margin-top: 0;
-  }
-
-  /* .story-title h2 {
-  font-size: 2.4vw;
-}
-.story-title p {
-  font-size: 1.6vw;
-}
-.story-btn a {
-  width: 19%;
-}
-.story-slide {
-  width: 60%;
-}
-.story-photo img {
-  width: 22vw;
-} */
   .story-item:nth-child(2) {
     display: none;
     visibility: hidden;
@@ -576,14 +518,26 @@
     margin-right: 1vw;
   }
 
-  .stroy-btn2 {
-    display: none;
-    visibility: hidden;
+  .prev {
+    left: -150px;
+  }
+
+  .next {
+    left: 100px;
   }
 
   .controller {
-    width: 400px;
+    width: 270px;
+  }
+  .instar-slide {
+    padding-top: 20vh;
+    margin-bottom: -200px;
   }
 }
 
-@media all and(min-width:320px) and (max-width:479px) {}
+/* .common-title>span {
+  margin-bottom: 33vw;
+} 딴걸로 바꾸셈 영향감*/
+
+
+@media (max-width:320px) {}
