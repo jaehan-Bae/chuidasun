@@ -1,0 +1,75 @@
+/* section {
+  margin: auto;
+} */
+
+.slick-list {
+  margin-top: -30vh;
+}
+/* ============ Section: tip ============ */
+.tip {
+  width: -20vh;
+}
+.tip-item > h3 {
+  font-size: 2.4vw;
+}
+.tip-item > p {
+  font-size: 1.6vw;
+}
+
+/* ============ Section: class ============ */
+.class-slide img {
+  margin-right: 1vw;
+}
+.event-contents > div {
+  display: flex;
+  height: 20vh;
+}
+.event-photo {
+  /* height: 200px; */
+}
+.event-photo img {
+  height: 200px;
+}
+
+/* ============ Section: story ============ */
+.story-title h2 {
+  margin-top: -50px;
+}
+.story-left {
+  width: 50%;
+}
+.story-btn {
+  margin-top: -40px;
+}
+.story-btn a {
+  margin-top: 0;
+}
+/* .story-title h2 {
+  font-size: 2.4vw;
+}
+.story-title p {
+  font-size: 1.6vw;
+}
+.story-btn a {
+  width: 19%;
+}
+.story-slide {
+  width: 60%;
+}
+.story-photo img {
+  width: 22vw;
+} */
+.story-item:nth-child(2) {
+  display: none;
+  visibility: hidden;
+}
+.story-item {
+  margin-right: 1vw;
+}
+.stroy-btn2 {
+  display: none;
+  visibility: hidden;
+}
+.controller {
+  width: 400px;
+}

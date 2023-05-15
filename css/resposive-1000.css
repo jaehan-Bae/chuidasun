@@ -78,7 +78,7 @@ header nav a:after {
   width: 100%;
 }
 .slick-list {
-  margin-top: -200px;
+  margin-top: -20vh;
 }
 .welcome-ball {
   position: absolute;
@@ -88,12 +88,14 @@ header nav a:after {
 .tip {
   margin-top: -40vh;
 }
+.tip-contents {
+  width: 100%;
+}
 .class-slide img {
   width: 100%;
 }
 /* ============ Section: tip-modal ============ */
 /* ============ Section: class ============ */
-.class {}
 .class-inner {
   width: 100%;
 }
@@ -106,20 +108,19 @@ header nav a:after {
 /* ============ Section: movie ============ */
 .movie {
   margin-top: 10vh;
-  text-align: center;
-  position: relative;
-  height: 100vh;
 }
 .video-content iframe {
-  width: 1000px;
 }
 
 /* ============ Section: story ============ */
 .story {
-  /* margin-top: 0px; */
+  margin-top: -27vh;
 }
 .story-inner {
   width: 100%;
+}
+.story-left {
+  width: 40%;
 }
 /* ============ Section: event ============ */
 .event {
@@ -129,10 +130,8 @@ header nav a:after {
   overflow: hidden;
 }
 .event-contents > div {
-  float: left;
-  width: 33.333333%;
-}
-.event-photo {
+  display: flex;
+  height: 30vh;
 }
 .event-photo img {
   width: 100%;
@@ -150,7 +149,15 @@ header nav a:after {
   width: 100%;
   margin-top: 22vh;
 }
-
+.slick-prev:before, 
+.slick-next:before {
+  display: none;
+  visibility: hidden;
+}
+.slick-prev, .slick-next {
+  display: none;
+  visibility: hidden;
+}
 /* ============ Section: course ============ */
 .course {
   height: 220vh;
@@ -260,20 +267,15 @@ footer {
   margin-top: 2vh;
 }
 .footer-inner {
-  width: 1000px;
+  width: 100%;
   margin: auto;
 }
 .footer-top > div {
   float: none;
   width: 100%;
 }
-.footer-top {
-  margin: 0 50px;
-}
-.footer-left {
-}
 .footer-left p {
-  width: 1000px;
+  width: 100%;
 }
 .footer-right {
   float: none;
@@ -407,34 +409,4 @@ input[type='tel']:focus::placeholder {
 }
 .que > a:hover {
   text-decoration: underline;
-}
-
-/* goto-top */
-.btn-top {
-  position: fixed;
-  background-color: #53513D;
-  color: #fff;
-  right: 20px;
-  bottom: 50px;
-  padding: 15px 20px;
-  font-size: 20px;
-  transition: .5s;
-}
-.btn-top.active {
-  bottom: 20px;
-}
-
-/* ▦▦▦▦▦▦▦▦▦ Scroll Reveal CSS Animation ▦▦▦▦▦▦▦▦▦ */
-.utd {
-  animation: utd .5s linear both;
-}
-@keyframes utd {
-  0% {
-    opacity: 0;
-    transform: translateY(-100px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }

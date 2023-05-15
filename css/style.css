@@ -75,7 +75,7 @@ header.active {
 }
 header {
   position: fixed;
-  width: 90%;
+  width: 1800px;
   height: 9vh;
   background-color: #fff;
   z-index: 1;
@@ -134,7 +134,7 @@ header nav a:last-child:after {
 /* ============Section: welcome============ */
 .welcome {
   height: 90vh;
-  position: relative;
+  /* position: relative; */
 }
 .welcome-slide {
   width: 100%;
@@ -389,19 +389,18 @@ header nav a:last-child:after {
 .movie {
   margin-top: 80px;
   text-align: center;
-  position: relative;
   width: 100%;
   height: 100vh;
 }
-.video-content {
+.video-content iframe {
   position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: 100%;
+  height: 60vh;
 }
 
 /* ============ Section: story ============ */
-.story {
-}
 .story-inner {
   width: 1000px;
   margin: auto;
@@ -494,16 +493,15 @@ header nav a:last-child:after {
   overflow: hidden;
 }
 .event-contents > div {
+  /* display: flex; */
   float: left;
   width: 33.333333%;
-  height: 200px;
+  height: 40vh;
 }
-.event-contents {}
 .event-photo {
   overflow: hidden;
   cursor: pointer;
-  width: 700px;
-  height: 400px;
+  object-fit: cover;
 }
 .event-photo img {
   transition: all .3s;
@@ -701,11 +699,11 @@ footer {
 .footer-bottom > div {
   margin-top: 20px;
 }
-.copyright {
-  float: left;
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
 }
 .sns {
-  float: right;
   font-size: 20px;
   letter-spacing: 2px;
 }
