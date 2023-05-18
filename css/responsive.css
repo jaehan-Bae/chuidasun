@@ -63,7 +63,7 @@
 
   /* Trigger */
   .trigger {
-    z-index: 3;
+    z-index: 10000;
     width: 30px;
     height: 30px;
     position: absolute;
@@ -340,9 +340,6 @@
   margin-top: 9vh;
 }
 
-  /* ============ Section: story ============ */
-
-  
   /* ============ Section: course ============ */
 .course-contents {
   height: 700px;
@@ -394,40 +391,9 @@
     left: 85%;
     transform: translate(-50%, -50%);
   }
-
   .info {
     display: none;
   }
-  /* ============ Section: course ============ */
-/* .course-contents {
-  height: 600px;
-}
-
-.course-item {
-  width: 40%;
-  flex-basis: 40%;
-}
-.course-img img {
-  width: 40vw;
-}
-
-.course-desc {
-  width: 38vw;
-  height: 10vh;
-}
-
-.course-desc span {
-  font-size: 2vw;
-  margin-top: -2vh;
-}
-
-.course-desc p {
-  font-size: 1.5vw;
-  line-height: 1.7;
-}
-.course-item:nth-child(3) {
-  display: none;
-} */
 }
 
 @media (max-width:480px) {
@@ -541,4 +507,33 @@
 }
 
 
-@media (max-width:320px) {}
+@media (max-width:380px) {
+  .logo img {
+    position: absolute;
+    top: 40%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+  }
+  .slick-list {
+    margin-top: -50vh;
+  }
+  .tip {
+    margin-top: -70vh;
+  }
+  .class-head {
+    margin-bottom: 440px;
+  }
+  .event-photo img {
+    height: 60%;
+  }
+  .movie {
+    margin-top: 0vh;
+  }
+  .instar {
+    margin-bottom: -300px;
+  }
+  .instar-slide {
+    margin-top: 250px;
+  }
+
+}
