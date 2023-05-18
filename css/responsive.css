@@ -130,10 +130,11 @@
   .movie {
     margin-top: 7vh;
   }
+  
 
   /* ============ Section: story ============ */
   .story {
-    margin-top: -27vh;
+    /* margin-top: 30vh; */
   }
 
   .story-inner {
@@ -463,14 +464,9 @@
   .story-contents {
     padding: 0;
   }
-  .story-title h2 {
-    /* margin-top: -20vh; */
-  }
-
   .story-left {
     width: 40%;
   }
-
   .story-title {
     margin-left: -5vw;
   }
@@ -495,37 +491,29 @@
   .prev,.next {
     display: none;
   }
-
   .story-left {
     width: 40%;
     margin-left: 60px;
   }
-
   .story-right {
     width: 40%;
   }
-
   .story-btn {
     margin-top: 4vh;
   }
-
   .story-item:nth-child(2) {
     display: none;
     visibility: hidden;
   }
-
   .story-item {
     margin-right: 1vw;
   }
-
   .prev {
     left: -150px;
   }
-
   .next {
     left: 100px;
   }
-
   .controller {
     width: 270px;
   }
@@ -533,11 +521,24 @@
     padding-top: 20vh;
     margin-bottom: -200px;
   }
-}
+  .footer-bottom {
+    display: none;
+  }
 
-/* .common-title>span {
-  margin-bottom: 33vw;
-} 딴걸로 바꾸셈 영향감*/
+  /* ============ Section: event ============ */
+  .event-photo img {
+    height: 70%;
+  }
+  .event-photo:nth-child(3),
+  .event-photo:nth-child(6),
+  .event-photo:nth-child(1) {
+    display: none;
+  }
+  /* ============ Section: instar ============ */
+  .instar {
+    margin-top: 0;
+  }
+}
 
 
 @media (max-width:320px) {}
