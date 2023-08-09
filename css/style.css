@@ -133,11 +133,11 @@ header nav a:last-child:after {
 /* ============Section: welcome============ */
 .welcome {
   height: 90vh;
-  /* position: relative; */
+  overflow: visible;
 }
 .welcome-slide {
   width: 100%;
-  height: 90vh;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -197,8 +197,7 @@ header nav a:last-child:after {
   height: 180px;
 }
 .tip-inner {
-  height: inherit;
-  /* width: 1300px; */
+  height: 180px;
   width: 100%;
   margin: auto;
 }

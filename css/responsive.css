@@ -6,6 +6,12 @@
   }
 }
 
+@media (min-width:2500px) {
+  .tip {
+    margin-top: 400px;
+  }
+}
+
 @media (max-width:1024px) {
 
   /* ####################### Header ####################### */
